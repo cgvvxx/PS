@@ -12,9 +12,9 @@
 
 ### Rules
 
-- 이틀에 한 문제 이상 풀고 commit 할 것 (여유가 된다면 일일커밋 도전 ❕❗)
-  - Programmers Level 3 🔺
-  - Backjoon Gold Level  🔺
+- 매일 한 문제 이상 풀고 commit 할 것 (일일커밋 도전 ❕❗)
+  - Programmers Level 2 🔺
+  - Backjoon Silver Level  🔺
 
 - 코드 리뷰의 가독성을 위하여 변수명과 로직을 명확히 할 것
   - 다른 사람이 볼 때 / 내가 다시 살펴 볼 때 쉽게 이해할 수 있도록 주석 작성
