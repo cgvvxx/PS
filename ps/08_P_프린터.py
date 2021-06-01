@@ -1,4 +1,5 @@
-# Level2
+# Programmers - 프린터
+# Level 2
 # 스택/큐
 
 from collections import deque
