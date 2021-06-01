@@ -1,4 +1,5 @@
 # Programmers - 가장 긴 팰린드롬
+# Level 3
 
 def palindrome(s):
     idx, idx_len = 0, len(s)
