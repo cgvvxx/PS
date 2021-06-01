@@ -1,4 +1,5 @@
-# Level2
+# Programmers - 타겟넘버
+# Level 2
 # DFS/BFS
 
 from itertools import combinations
