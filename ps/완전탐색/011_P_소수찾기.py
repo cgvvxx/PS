@@ -1,3 +1,4 @@
+# Programmers - 소수 찾기
 # Level 2
 # 완전탐색
 
