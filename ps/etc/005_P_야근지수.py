@@ -1,4 +1,5 @@
 # Programmers - 야근지수
+# Level 3
 
 def over_night(works, n):
     answer = 0
