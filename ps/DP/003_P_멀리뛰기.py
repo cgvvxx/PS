@@ -1,3 +1,7 @@
+# Programmers - 멀리뛰기
+# Level 3
+# 동적계획법
+
 def solution(n):
     fibo_li = [1, 2]
     for i in range(2, 2000):
