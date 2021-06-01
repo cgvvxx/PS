@@ -1,4 +1,6 @@
 # Programmers - 줄 서는 방법
+# Level 3
+# 동적계획법
 
 def fact(n):
     if n == 1:
