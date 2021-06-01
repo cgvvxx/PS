@@ -1,4 +1,4 @@
-# Level2
+# Level 2
 # 완전탐색
 
 from itertools import permutations
