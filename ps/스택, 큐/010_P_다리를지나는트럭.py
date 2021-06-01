@@ -1,4 +1,5 @@
-# Level2
+# Programmers - 다리를 지나는 트럭
+# Level 2
 # 스택/큐
 
 from collections import deque
