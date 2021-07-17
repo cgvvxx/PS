@@ -1,13 +1,13 @@
+
+
 # DFS/BFS
 
-
-
-### DFS(Depth-First Search; 깊이 우선 탐색)
-
-### & BFS(Breadth-First Search; 너비 우선 탐색)
+## DFS(Depth-First Search; 깊이 우선 탐색)
 
 > DFS : 루트 노드(혹은 임의의 노드)에서 시작하여 다음 분기로 넘어가기 전에 해당 분기를 완벽히 탐색하는 방법
->
+
+## BFS(Breadth-First Search; 너비 우선 탐색)
+
 > BFS : 루트 노드(혹은 임의의 노드)에서 시작하여 인접한 노드를 우선적으로 탐색하는 방법
 
 
@@ -26,17 +26,16 @@
 
 - DFS의 시간복잡도 인접행렬 : O(V^2) , 인접리스트 : O(V+E)
 
-<img src="C:\Users\XD\Dropbox\adj.png" alt="adj" style="zoom:70%;" />
+<img src=".\IMAGE\adj.png" alt="adj" style="zoom:70%;" />
 
 
 
 ### 2. DFS/BFS
 
 - 1. DFS : 스택 또는 재귀함수로 구현
-
   2. BFS : 큐로 구현
 
-     <img src="C:\Users\XD\Dropbox\dfs.png" alt="dfs" style="zoom:40%;" /> <img src="C:\Users\XD\Dropbox\bfs.png" alt="bfs" style="zoom:40%;" />
+<img src=".\IMAGE\dfs.png" alt="dfs" style="zoom:54%;" /> <img src=".\IMAGE\bfs.png" alt="bfs" style="zoom:54%;" />
 
 - 일반적으로 구현은 DFS가 BFS보다 간단하지만 검색속도는 BFS가 DFS보다 빠름
 

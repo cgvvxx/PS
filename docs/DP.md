@@ -1,10 +1,10 @@
 # DP
 
-
-
-### Dynamic Programming(DP; 동적 프로그래밍)
+## Dynamic Programming(DP; 동적 프로그래밍)
 
 > 메모리를 적절히 사용하여 수행 시간 효율성을 향상시키는 방법
+
+
 
 - 이미 계산된 결과를 메모리에 저장(Memoization)하여 반복하여 계산하지 않도록 하여 시간 효율성 향상
 - 다음의 조건을 만족하는 경우 DP 활용
