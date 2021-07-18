@@ -1,7 +1,6 @@
 # Pythonic
 
 
-
 ## 1. 문자열
 
 ```python
@@ -18,7 +17,7 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 0123456789
 ```
 
-
+<br>
 
 ## 2. 리스트
 
@@ -44,7 +43,7 @@ print(*_list)
 N, *arr = map(int, input().split())
 ```
 
-
+<br>
 
 ## 3. 기본 라이브러리
 
@@ -121,7 +120,7 @@ math.floor(r) # [r]
 
 - Binary Search 자료구조 참고
 
-
+<br>
 
 ## 4. 기타
 

@@ -4,7 +4,7 @@
 
 > 컴퓨터에서 다루는 데이터를 구조적으로 표현하는 방식, 
 
-
+<br>
 
 ### 1. 스택(Stack)
 
@@ -42,7 +42,7 @@
 
 - 파이썬에서는 collections 모듈의 deque 클래스로 활용
 
-
+<br>
 
 ### Ex. Queue
 
@@ -81,10 +81,10 @@ print(heap)
 >> [7, 10, 23]
 ```
 
-
+<br>
 
 ### 참고 문제
 
-- Baekjoon #1655 - [가운데를 말해요] : [problem]([1655번: 가운데를 말해요 (acmicpc.net)](https://www.acmicpc.net/problem/1655)), [solution]()
+- Baekjoon #1655 - [가운데를 말해요] : [problem](https://www.acmicpc.net/problem/1655), [solution]()
 
 
