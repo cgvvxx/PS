@@ -17,7 +17,7 @@
   - 주어진 문제의 부분 문제가 중복되는 경우 => DP
   - 동일한 부분 문제가 반복적으로 계산되지 않는 경우 => 분할 정복
 
-
+<br>
 
 ### Ex. 피보나치 수열
 
@@ -61,11 +61,11 @@ for i in range(3, n+1):
 D[n]
 ```
 
-
+<br>
 
 ### 참고 문제
 
-- Baekjoon #1463 - [1로 만들기] : [problem]([1463번: 1로 만들기 (acmicpc.net)](https://www.acmicpc.net/problem/1463)), [solution]()
+- Baekjoon #1463 - [1로 만들기] : [problem](https://www.acmicpc.net/problem/1463), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/DP/033_B_1463.py)
 
-- Baekjoon #11053 - [가장 긴 증가하는 부분수열(LIS)] : [problem]([11053번: 가장 긴 증가하는 부분 수열 (acmicpc.net)](https://www.acmicpc.net/problem/11053)), [solution]()
+- Baekjoon #11053 - [가장 긴 증가하는 부분수열(LIS)] : [problem](https://www.acmicpc.net/problem/11053), [solution]()
 
