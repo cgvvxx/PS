@@ -10,7 +10,7 @@
 
 > BFS : 루트 노드(혹은 임의의 노드)에서 시작하여 인접한 노드를 우선적으로 탐색하는 방법
 
-
+<br>
 
 ### 1. Graph
 
@@ -26,7 +26,7 @@
 
 - DFS의 시간복잡도 인접행렬 : O(V^2) , 인접리스트 : O(V+E)
 
-<img src=".\IMAGE\adj.png" alt="adj" style="zoom:70%;" />
+<p align="center"><img src=".\IMAGE\adj.png" alt="adj" style="zoom:70%;" /></p>
 
 
 
@@ -35,7 +35,7 @@
 - 1. DFS : 스택 또는 재귀함수로 구현
   2. BFS : 큐로 구현
 
-<img src=".\IMAGE\dfs.png" alt="dfs" style="zoom:54%;" /> <img src=".\IMAGE\bfs.png" alt="bfs" style="zoom:54%;" />
+<p align="center"><img src=".\IMAGE\dfs.png" alt="dfs" height="300px" width="470px" /> <img src=".\IMAGE\bfs.png" alt="bfs"  height="300px" width="470px" /></p>
 
 - 일반적으로 구현은 DFS가 BFS보다 간단하지만 검색속도는 BFS가 DFS보다 빠름
 
@@ -43,7 +43,7 @@
 - 경로의 특징을 저장해둬야 하는 경우 DFS, 최단거리를 구해야 하는 경우 BFS
 - 검색 대상인 그래프가 큰 경우 DFS, 그래프의 규모가 크지 않고 시작 지점으로부터 원하는 대상이 그리 멀지 않은 경우 BFS
 
-
+<br>
 
 ### Ex. DFS/BFS
 
@@ -89,13 +89,13 @@ bfs(graph, 1, visited)
 >> Result ; 1 2 3 8 7 4 5 6
 ```
 
-
+<br>
 
 ### 참고 문제
 
-- Baekjoon #1012 - [유기농 배추] : [problem](https://www.acmicpc.net/problem/1012), [solution]()
+- Baekjoon #1012 - [유기농 배추] : [problem](https://www.acmicpc.net/problem/1012), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/DFS%2C%20BFS/036_B_1012.py)
 
-- Baekjoon #2178 - [미로 탐색] : [problem](https://www.acmicpc.net/problem/2178), [solution]()
+- Baekjoon #2178 - [미로 탐색] : [problem](https://www.acmicpc.net/problem/2178), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/DFS%2C%20BFS/041_B_2178.py)
 
   
 
