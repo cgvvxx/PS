@@ -29,6 +29,7 @@
 ### Algorithm
 
 - [Pythonic](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Pythonic.md)
+- [Brute Force](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Brute_Force.md)
 - [Stack / Queue](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Stack%26Queue.md)
 - [Dynamic Programming](https://github.com/cgvvxx/algorithm_study/blob/master/docs/DP.md)
 - [DFS / BFS](https://github.com/cgvvxx/algorithm_study/blob/master/docs/DFS%26BFS.md)
