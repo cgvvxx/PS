@@ -101,7 +101,5 @@ print(sum(ct))
 ### 참고 문제
 
 - Baekjoon #9663 - [N-Queen] : [problem](https://www.acmicpc.net/problem/9663), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/074_P_N-Queen.py)
-
-  
-
-
+- Baekjoon #14888 - [연산자 끼워넣기] : [problem](https://www.acmicpc.net/problem/14888), [solution]()
+- Baekjoon #2580 - [스도쿠] : [problem](https://www.acmicpc.net/problem/2580), [solution]()
