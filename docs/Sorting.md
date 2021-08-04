@@ -24,9 +24,8 @@
   - in-place : Bubble sort, Selection, Insertion sort, Quick sort(?), Heap sort
   - not in-place : Merge sort, Counting sort
 
-  ![](./sorting.png)
-
-  ![](./sorting_2.gif)
+<p align="center"><img src=".\IMAGE\sorting.png" alt="adj" style="zoom:70%;" /></p>
+<p align="center"><img src=".\IMAGE\sorting_2.gif" alt="adj" style="zoom:70%;" /></p>
 
 <br>
 
@@ -44,13 +43,15 @@
 
   ```python
   def bubble_sort(arr):
+  
       n = len(arr)
+      
       for i in range(n-1):
           for j in range (n-1-i):
               if arr[j] > arr[j+1]:
                   arr[j], arr[j+1] = arr[j+1], arr[j]
 
-
+<br>
 
 #### 2. 선택 정렬(Selection Sort)
 
@@ -66,7 +67,9 @@
 
   ```python
   def selection_sort(arr):
-  	n = len(arr)
+  
+      n = len(arr)
+
       for i in range(0, n-1):
           least = i
           for j in range (i+1, n):
@@ -75,7 +78,7 @@
           arr[i], arr[least] = arr[least], arr[i]
   ```
 
-  
+<br>
 
 #### 3. 삽입 정렬(Insertion Sort)
 
@@ -92,17 +95,19 @@
 
   ```python
   def insertion_sort(arr):
-  	n = len(arr)
+  
+      n = len(arr)
+
       for i in range(1, n):
           key = arr[i]
           j = i-1
           while j >= 0 and arr[j] > key:
               arr[j+1] = arr[j]
               j = j-1
-     		arr[j+1] = key
+          arr[j+1] = key
   ```
 
-  
+<br>
 
 #### 4. 병합 정렬(Merge Sort)
 
@@ -124,26 +129,33 @@
   def merge_sort(arr):
       
       def merge(left, right):
-      sorted_list = []
-      while len(left) > 0 or len(right) > 0:
-          if len(left) > 0 and len(right) > 0:
-              if left[0] <= right[0]:
+      
+          sorted_list = []
+          while len(left) > 0 or len(right) > 0:
+          
+              if len(left) > 0 and len(right) > 0:
+                  if left[0] <= right[0]:
+                      sorted_list.append(left[0])
+                      left = left[1:]
+                  else:
+                      sorted_list.append(right[0])
+                      right = right[1:]
+                      
+              elif len(left) > 0:
                   sorted_list.append(left[0])
                   left = left[1:]
-              else:
+                  
+              elif len(right) > 0:
                   sorted_list.append(right[0])
                   right = right[1:]
-          elif len(left) > 0:
-              sorted_list.append(left[0])
-              left = left[1:]
-          elif len(right) > 0:
-              sorted_list.append(right[0])
-              right = right[1:]
-      return sorted_list
+                  
+          return sorted_list
   
       n = len(arr)
+      
       if n <= 1:
           return arr
+          
       else:
           mid = n // 2 
           left = merge_sort(arr[:mid])
@@ -151,7 +163,7 @@
           return merge(left, right)
   ```
 
-  
+<br>
 
 #### 5. 퀵 정렬(Quick Sort)
 
@@ -172,12 +184,16 @@
   ```python
   #1. 재귀함수를 이용, 새로운 리스트를 생성하므로 추가적인 메모리 사용
   def quick_sort(arr):
+  
       n = len(arr)
+      
       if n <= 1:
           return arr
+          
       else:
           pivot = arr[n // 2]
           lesser_arr, equal_arr, greater_arr = [], [], []
+          
           for num in arr:
               if num < pivot:
                   lesser_arr.append(num)
@@ -185,12 +201,15 @@
                   greater_arr.append(num)
               else:
                   equal_arr.append(num)
+                  
           return quick_sort(lesser_arr) + equal_arr + quick_sort(greater_arr)
+      
       
   #2. in-place 형태의 퀵 정렬
   def quick_sort(arr):
       
       def sort(low, high):
+      
           if high <= low:
               return
   
@@ -199,7 +218,9 @@
           sort(mid, high)
   
       def partition(low, high):
+      
           pivot = arr[(low + high) // 2]
+          
           while low <= high:
               while arr[low] < pivot:
                   low += 1
@@ -213,7 +234,7 @@
       return sort(0, len(arr) - 1)
   ```
 
-  
+<br>
 
 #### 6. 힙 정렬(Heap Sort)
 
@@ -233,16 +254,18 @@
   def heap_sort(arr):
     
       def heapify(unsorted, index, heap_size):
-      largest = index
-      left_index = 2 * index + 1
-      right_index = 2 * index + 2
-      if left_index < heap_size and unsorted[left_index] > unsorted[largest]:
-          largest = left_index
-      if right_index < heap_size and unsorted[right_index] > unsorted[largest]:
-          largest = right_index
-      if largest != index:
-          unsorted[largest], unsorted[index] = unsorted[index], unsorted[largest]
-          heapify(unsorted, largest, heap_size)
+      
+          largest = index
+          left_index = 2 * index + 1
+          right_index = 2 * index + 2
+          
+          if left_index < heap_size and unsorted[left_index] > unsorted[largest]:
+              largest = left_index
+          if right_index < heap_size and unsorted[right_index] > unsorted[largest]:
+              largest = right_index
+          if largest != index:
+              unsorted[largest], unsorted[index] = unsorted[index], unsorted[largest]
+              heapify(unsorted, largest, heap_size)
           
       n = len(arr)
       mid = n // 2
@@ -254,7 +277,7 @@
           heapify(arr, 0, i)
   ```
 
-
+<br>
 
 #### 7. 계수 정렬(Counting Sort)
 
@@ -274,6 +297,7 @@
 
   ```python
   def counting_sort(arr):
+  
       K = max(arr)
       n = len(arr)
       counts = [0] * (K + 1)
