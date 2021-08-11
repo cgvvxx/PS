@@ -45,7 +45,7 @@
 
 <br>
 
-### Ex. DFS/BFS
+### Ex1. DFS/BFS
 
 ```python
 # DFS ; 재귀함수 형태의 알고리즘
@@ -87,6 +87,45 @@ def bfs(graph, start, visited):
 bfs(graph, 1, visited)
 
 >> Result ; 1 2 3 8 7 4 5 6
+```
+
+
+
+### EX2. 미로 탈출
+
+```python
+# BFS ; n by m 행렬로 주어진 2차원 배열
+# [이것이 코딩 테스트다 with Python] 20강 DFS & BFS 기초 문제 풀이
+
+from collections import deque
+
+def bfs(x, y):
+    
+    queue = deque()
+    queue.append((x, y))
+    
+    while queue:
+        x, y = queue.popleft()
+        
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if nx < 0 or ny < 0 or nx >= n or ny >= m:
+                continue
+            if graph[nx][ny] == 0:
+                continue
+            if graph[nx][ny] == 1:
+                graph[nx][ny] = graph[x][y] + 1
+                queue.append((nx, ny))
+	return grpah[n-1][m-1]
+
+n, m = map(int, input().split())
+graph = [list(map(int, input())) for _ in range(n)]
+
+dx = [-1, 1, 0, 0]
+dy = [0, 0, -1, 1]
+
+print(bfs(0, 0))
 ```
 
 <br>
