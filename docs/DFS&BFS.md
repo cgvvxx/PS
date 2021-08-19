@@ -53,14 +53,36 @@
 graph = [[], [2, 3, 8], [1, 7], [1, 4, 5], [3, 5], [3, 4], [7], [2, 6, 8], [1, 7]]
 visited = [False] * len(graph)
 
-def dfs(graph, v, visited):
+def dfs_recursive(graph, v, visited):
     visited[v] = True
-    print(b, end=' ')
+    print(v, end=' ')
     for i in graph[v]:
         if not visited[i]:
-            dfs(graph, i, visited)
+            dfs_recursive(graph, i, visited)
             
-dfs(graph, 1, visited)
+dfs_recursive(graph, 1, visited)
+
+>> Result ; 1 2 7 6 8 3 4 5
+```
+
+```python
+# DFS ; stack 활용
+# 인접리스트로 표현된 graph
+graph = [[], [2, 3, 8], [1, 7], [1, 4, 5], [3, 5], [3, 4], [7], [2, 6, 8], [1, 7]]
+visited = [False] * len(graph)
+
+def dfs_stack(graph, v, visited):
+    
+    stack = [v]
+     
+    while stack:
+        v = stack.pop()
+        if not visited[v]:
+            visited[v] = True
+            print(v, end=' ')
+            stack.extend(sorted(graph[v], reverse=True)) # 작은 순서대로 방문하기 위해 sorted 활용
+            
+dfs_stack(graph, 1, visited)
 
 >> Result ; 1 2 7 6 8 3 4 5
 ```
