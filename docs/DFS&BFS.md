@@ -139,7 +139,7 @@ def bfs(x, y):
             if graph[nx][ny] == 1:
                 graph[nx][ny] = graph[x][y] + 1
                 queue.append((nx, ny))
-	return grpah[n-1][m-1]
+	return graph[n-1][m-1]
 
 n, m = map(int, input().split())
 graph = [list(map(int, input())) for _ in range(n)]
