@@ -31,6 +31,11 @@ print(arr)
 my_list = [[1, 4], [5, 6]]
 print(sum(my_list, []))
 >> [1, 4, 5, 6]
+    
+# 행렬의 전치
+my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(list(zip(*my_list)))
+>> [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 ```
 
 ```python
