@@ -53,6 +53,12 @@ def dfs():
         l.pop()
 
 dfs()
+
+## 만약 return을 줘서 해가 나온 경우 함수를 break하는 경우 다음과 같이 작성
+# return sth
+# sth = dfs()
+# if sth: return sth
+# sth = dfS()
 ```
 
 ```python
