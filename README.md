@@ -33,3 +33,5 @@
 - [Stack / Queue](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Stack%26Queue.md)
 - [Dynamic Programming](https://github.com/cgvvxx/algorithm_study/blob/master/docs/DP.md)
 - [DFS / BFS](https://github.com/cgvvxx/algorithm_study/blob/master/docs/DFS%26BFS.md)
+- [Sorting](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Sorting.md)
+- [Shortest Path](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Shortest_Path.md)
