@@ -28,7 +28,7 @@
 
 <p align="center"><img src=".\IMAGE\adj.png" alt="adj" style="zoom:70%;" /></p>
 
-
+<br>
 
 ### 2. DFS/BFS
 
@@ -110,8 +110,6 @@ bfs(graph, 1, visited)
 
 >> Result ; 1 2 3 8 7 4 5 6
 ```
-
-
 
 ### EX2. 미로 탈출
 

@@ -44,7 +44,7 @@
 
 <br>
 
-### Ex. Queue
+### Ex1. Queue
 
 ```python
 from collections import deque
@@ -60,7 +60,7 @@ print(queue)
 >> deque([7, 9])
 ```
 
-### Ex. Heap
+### Ex2. Heap
 
 ```python
 import heapq
@@ -85,5 +85,6 @@ print(heap)
 
 ### 참고 문제
 
-- Baekjoon #1655 - [가운데를 말해요] : [problem](https://www.acmicpc.net/problem/1655), [solution]()
+- Baekjoon #1655 - [가운데를 말해요] : [problem](https://www.acmicpc.net/problem/1655), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%8A%A4%ED%83%9D%2C%20%ED%81%90/058_B_1655.py)
+- Baekjoon #13334 - [철로] : [problem](https://www.acmicpc.net/problem/13334), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/스택%2C 큐/136_B_13334.py)
 

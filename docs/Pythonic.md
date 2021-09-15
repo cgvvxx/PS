@@ -54,9 +54,9 @@ N, *arr = map(int, input().split())
 
 - Python standard library : [collections](https://docs.python.org/ko/3/library/collections.html), [itertools](https://docs.python.org/ko/3/library/itertools.html), [math](https://docs.python.org/ko/3/library/math.html)
 
-### 1. collections
+### 3.1. collections
 
-#### 1. Counter
+#### 3.1.1. Counter
 
 ```python
 from collections import Counter
@@ -73,7 +73,7 @@ Counter(_list)
 - Counter 객체끼리 +, -, &, | 연산 가능
 - most_common(n), update(), elements() etc.
 
-#### 2. defaultdict
+#### 3.1.2. defaultdict
 
 ```python
 _string = 'hello World'
@@ -86,11 +86,11 @@ print(_string_dict)
 
 - Dictionary에 값이 있으면 주어진 키로 접근, 값이 없으면 넘겨준 값을 default로 설정
 
-#### 3. deque
+#### 3.1.3. deque
 
 - Stack&Queue 자료구조 참고
 
-### 2. itertools
+### 3.2. itertools
 
 ```python
 # permutations, combinations, product, combinations_with_replacement
@@ -108,7 +108,7 @@ print(*combinations_with_replacement(_list, 2))
 (1, 1) (1, 2) (1, 3) (2, 1) (2, 2) (2, 3) (3, 1) (3, 2) (3, 3)
 ```
 
-### 3. math
+### 3.3. math
 
 ```python
 import math
@@ -117,17 +117,52 @@ math.lcm(n, m) # n과 m의 최소공배수
 math.floor(r) # [r]
 ```
 
-### 4. heapq
+### 3.4. heapq
 
 - Stack&Queue 자료구조 참고
 
-### 5. bisect
+### 3.5. bisect
 
 - Binary Search 자료구조 참고
 
 <br>
 
 ## 4. 기타
+
+### 4.1 소수
+
+- 소수 판별
+
+```python
+# root(n)까지 검사
+def is_prime(n):
+    
+    n = int(n)
+    m = int(n ** 0.5)
+    
+    for i in range(2, m+1):
+        if n % i == 0:
+            return False
+    
+    return True
+```
+
+```python
+# DP 활용 소수 판별 - 아리스토텔레스의 체
+def prime_list(n):
+    
+    primes = [True] * (n+1)
+    m = int(n ** 0.5)
+    
+    for i in range(2, m+1):
+        if primes[i]:
+            for j in range(i+i, n+1, i):
+                primes[j] = False
+    
+    return [i for i in range(2, n+1) if primes[i]]
+```
+
+### 4.2 ETC
 
 - 아스키코드 ; ord('char'), chr(num)
 - 10진수 > 2, 8, 16진수 ; bin(n), oct(n), hex(n)

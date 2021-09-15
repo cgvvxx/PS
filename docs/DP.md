@@ -4,7 +4,7 @@
 
 > 메모리를 적절히 사용하여 수행 시간 효율성을 향상시키는 방법
 
-
+<br>
 
 - 이미 계산된 결과를 메모리에 저장(Memoization)하여 반복하여 계산하지 않도록 하여 시간 효율성 향상
 - 다음의 조건을 만족하는 경우 DP 활용
@@ -66,6 +66,4 @@ D[n]
 ### 참고 문제
 
 - Baekjoon #1463 - [1로 만들기] : [problem](https://www.acmicpc.net/problem/1463), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/DP/033_B_1463.py)
-
-- Baekjoon #11053 - [가장 긴 증가하는 부분수열(LIS)] : [problem](https://www.acmicpc.net/problem/11053), [solution]()
 

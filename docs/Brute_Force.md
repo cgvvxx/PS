@@ -22,7 +22,7 @@
   - BFS 또는 DFS
   - 백트래킹
 
-
+<br>
 
 ### 2. 백트래킹(Backtracking)
 
@@ -102,7 +102,7 @@ dfs_chess()
 print(sum(ct))
 ```
 
-### Ex2. 비트연산자
+### Ex2. 비트마스크
 
 ```python
 # 비트연산자를 이용한 부분집합 생성
@@ -118,12 +118,10 @@ for i in range(1 << n):
 >> / 1 / 2 / 1 2 / 3 / 1 3 / 2 3 / 1 2 3 /   # 맨 앞은 공집합인 case
 ```
 
-
-
 <br>
 
 ### 참고 문제
 
 - Baekjoon #9663 - [N-Queen] : [problem](https://www.acmicpc.net/problem/9663), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/074_P_N-Queen.py)
-- Baekjoon #14888 - [연산자 끼워넣기] : [problem](https://www.acmicpc.net/problem/14888), [solution]()
-- Baekjoon #2580 - [스도쿠] : [problem](https://www.acmicpc.net/problem/2580), [solution]()
+- Baekjoon #14888 - [연산자 끼워넣기] : [problem](https://www.acmicpc.net/problem/14888), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/093_B_14888.py)
+- Baekjoon #2580 - [스도쿠] : [problem](https://www.acmicpc.net/problem/2580), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/완전탐색/099_B_2580.py)

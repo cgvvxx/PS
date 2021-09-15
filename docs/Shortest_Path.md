@@ -19,8 +19,6 @@
 - Bellman-Ford-Moore Algorithm : 음의 가중치를 포함하는 그래프에서 단일 쌍, 단일 출발(도착) 최단 경로 문제에서 활용
 - Floyd-Warshall Algorithm : 전체 쌍 최단 경로 문제에서 활용
 
-
-
 ### 2. 다익스트라(Dijkstra) 알고리즘
 
 - V개의 정점과 음이 아닌 가중치를 가진 E개의 간선으로 이루어진 그래프에서 특정 출발점(S)에서 다른 모든 정점까지의 최단 경로를 구하는 알고리즘
@@ -29,8 +27,6 @@
 - 힙을 활용하여 시간복잡도를 O(VlogV)로 줄일 수 있음
 - "최단 경로의 부분 경로 또한 최단 경로이다"라는 정리를 활용
 
-
-
 ### 3. 플로이드-워셜(Floyd-Warshall) 알고리즘
 
 - 모든 정점 사이의 최단 경로를 구하는 알고리즘 (음의 가중치를 가진 그래프도 가능)
@@ -38,7 +34,7 @@
 
 <br>
 
-### Ex. Dijkstra
+### Ex1. Dijkstra
 
 ```python
 # 기본적인 Dijkstar algortithm 
@@ -135,9 +131,7 @@ for i in range(1, n+1):
         print(distance[i])
 ```
 
-
-
-### Ex. Floyd-Warshall
+### Ex2. Floyd-Warshall
 
 ```python
 # 기본적인 Floyd-Warshall algortithm 
@@ -148,21 +142,24 @@ n = int(input())
 m = int(input())
 graph = [[INF] * (n+1) for _ in range(n+1)]
 
+# 2차원 배열 초기화 
 for a in range(1, n+1):
     for b in range(1, n+1):
         if a == b:
             graph[a][b] = 0
 
+# 2차원 배열 초기화 - 간선에 대한 정보 업데이트
 for _ in range(m):
     a, b, c = map(int, input().split())
     graph[a][b] = c
-
+    
+# Floyd-Warshall Algorithm
 for i in range(1, n+1):
     for j in range(1, n+1):
         for k in range(1, n+1):
             graph[j][k] = min(graph[j][k], graph[j][i]+graph[i][k])
-            print(graph)
-            
+
+# 2차원 배열 출력
 for a in range(1, n+1):
     for b in range(1, n+1):
         if graph[a][b] == INF:
@@ -176,8 +173,9 @@ for a in range(1, n+1):
 
 ### 참고 문제
 
-- 
+- Baekjoon #1753 - [최단경로] : [problem](https://www.acmicpc.net/problem/1753), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC/146_B_1753.py)
+
+- Baekjoon #11404 - [플로이드] : [problem](https://www.acmicpc.net/problem/11404), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC/147_B_11404.py)
 
   
-
 
