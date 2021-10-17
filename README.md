@@ -35,3 +35,4 @@
 - [DFS / BFS](https://github.com/cgvvxx/algorithm_study/blob/master/docs/DFS%26BFS.md)
 - [Sorting](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Sorting.md)
 - [Shortest Path](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Shortest_Path.md)
+- [Disjoint_Set](https://github.com/cgvvxx/algorithm_study/blob/master/docs/Disjoint_Set.md)
