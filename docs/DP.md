@@ -162,4 +162,4 @@ print(len(dp_val)-1)
 
 - Baekjoon #12865 - [평범한 배낭] : [problem](https://www.acmicpc.net/problem/12865), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/DP/166_B_12865.py)
 
-- Baekjoon #11053 - [가장 긴 증가하는 부분 수열] : 
+- Baekjoon #11053 - [가장 긴 증가하는 부분 수열] : [problem](https://www.acmicpc.net/problem/11053), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/DP/187_B_11053.py)
