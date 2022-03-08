@@ -32,6 +32,13 @@
 - 모든 정점 사이의 최단 경로를 구하는 알고리즘 (음의 가중치를 가진 그래프도 가능)
 - 모든 정점에서 모든 정점으로 갈 때 모든 가능한 경유지를 살펴보아야 하므로 시간복잡도는 O(V^3)
 
+### 4. 0-1 BFS
+
+- 가중치가 0 또는 1(혹은 x)로 주어진 그래프에서 최단 경로를 구하는 알고리즘
+- 일반적인 BFS 탐색과 동일하지만, 가중치가 0인 정점이 존재하므로 정점의 방문횟수가 많더라도 가중치가 더 낮은 경우가 존재
+  - 가중치가 0인 경우 deque의 앞으로, 가중치가 1인 경우 deque에 뒤로 삽입
+- 다익스트라 알고리즘보다도 시간복잡도를 O(V+E)로 줄일 수 있음
+
 <br>
 
 ### Ex1. Dijkstra
@@ -177,5 +184,5 @@ for a in range(1, n+1):
 
 - Baekjoon #11404 - [플로이드] : [problem](https://www.acmicpc.net/problem/11404), [solution](https://github.com/cgvvxx/algorithm_study/blob/master/ps/%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC/147_B_11404.py)
 
-  
 
+- Baekjoon #1261 - [알고스팟] : [problem](https://www.acmicpc.net/problem/1261), [solution]()
