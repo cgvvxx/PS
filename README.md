@@ -55,7 +55,7 @@
 
 ## :computer: Algorithm Category
 
-![algorithm_ps_roadmap](https://raw.githubusercontent.com/stack07142/BOJ/master/img/Algorithm PS Roadmap_v0.1.png)
+![Algorithm PS Roadmap](https://user-images.githubusercontent.com/82948893/158559705-17be3b9a-eb86-4cbe-8359-1da744ffc27f.png)
 
 ```markdown
 algorithms
