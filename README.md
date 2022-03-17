@@ -60,18 +60,18 @@
 ```markdown
 algorithms
 ├── backtracking  :  백트래킹
-├── bfs  :  너비 우선 탐색
+├── bfs (breadth-first-search)  :  너비 우선 탐색
 ├── binary-search  :  이분 탐색
 ├── bitmask  :  비트마스킹
 ├── bruteforcing  :  완전 탐색
 ├── combinatorics  :  조합론
 ├── convex-hull  :  볼록 껍질
 ├── data-structure  :  자료 구조
-├── dfs  :  깊이 우선 탐색
+├── dfs (depth-first-search)  :  깊이 우선 탐색
 ├── dijkstra  :  다익스트라
 ├── disjoint-set  :  분리 집합
 ├── divide-and-conquer  :  분할 정복
-├── dp  :  다이나믹 프로그래밍
+├── dp (dynamic-programming)  :  다이나믹 프로그래밍
 ├── euclidean-algorithm  :  유클리드 호제법
 ├── floyd-warshall  :  플로이드-워셜
 ├── geometry  :  기하학
@@ -80,8 +80,9 @@ algorithms
 ├── implementation  :  구현
 ├── inclusion-and-exclusion  :  포함 배제의 원리
 ├── knapsack  :  배낭 문제
+├── lca (lowest-common-ancestor)  :  최소 공통 조상
 ├── mathematics  :  수학
-├── minimum-spanning-tree  :  최소 스패닝 트리
+├── mst (minimum-spanning-tree)  :  최소 스패닝 트리
 ├── number-theory  :  정수론
 ├── parsing  :  파싱
 ├── prefix-sum  :  누적 합
@@ -99,7 +100,7 @@ algorithms
 ├── topological-sorting  :  위상 정렬
 ├── tree  :  트리
 ├── trie  :  트라이
-├── tsp  :  외판원 순회 문제
+├── tsp (traveling-salesman-problem)  :  외판원 순회 문제
 └── two-pointer  :  투 포인터
 ```
 
