@@ -1,6 +1,6 @@
 # solved: [11497] 통나무 건너뛰기
 # https://www.acmicpc.net/problem/11497
-# greedy, sort
+# greedy, sorting
 # 
 # Silver 1
 # 통나무를 길이 순으로 정렬 후 두 계단 차이의 통나무 높이 차의 최댓값이 최소 난이도

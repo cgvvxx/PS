@@ -1,5 +1,5 @@
 # solved: [4796] 캠핑
-# https://www.acmicpc.net/problem/캠핑
+# https://www.acmicpc.net/problem/4796
 # greedy
 # 
 # Silver 5
