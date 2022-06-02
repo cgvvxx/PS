@@ -2,7 +2,6 @@
 
 > Problem Solving & Competitive Programming
 
-<br>
 
 ## :muscle: Rule
 
@@ -16,6 +15,7 @@
 ## :bulb: Convention
 
 - 한 문제당 하나의 커밋
+
 - 폴더는 문제 풀이 사이트 별로 구분할 것
 - 파일명과 커밋 컨벤션은 다음과 같이 통일할 것
 - 문제 풀이 플랫폼
