@@ -94,6 +94,7 @@ algorithms
 ├── segment-tree  :  세그먼트 트리
 ├── shortest-path  :  최단 거리
 ├── sieve-of-eratosthenes  :  에라토스테네스의 체
+├── sliding-window  :  슬라이딩 윈도우
 ├── sorting  :  정렬
 ├── stack  :  스택
 ├── string  :  문자열
